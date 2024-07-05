@@ -1,2 +1,2 @@
-# MapasFct
-mapas da salas da fct
+# mapaAnimado
+mapa animado
