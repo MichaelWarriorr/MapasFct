@@ -6,6 +6,11 @@ body {
     margin: 0;
     background-color: white;
 }
+
+area:hover{
+    background: green;
+}
+
 popup {
     width: 200px; /* largura do pop-up */
     max-width: 80%; /* largura máxima do pop-up */
@@ -14,4 +19,6 @@ popup {
     padding: 10px;
     position: absolute;
     z-index: 1000; /* coloca o pop-up acima de todos os outros elementos */
+    border-radius: 15px;
 }
+

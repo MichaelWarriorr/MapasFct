@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.style.border = '1px solid black';
             popup.style.padding = '10px';
             popup.style.zIndex = '1000';
+            popup.style.borderRadius = '15px';  
 
             // Adiciona o pop-up ao corpo do documento
             document.body.appendChild(popup);
