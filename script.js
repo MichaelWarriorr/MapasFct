@@ -2,25 +2,25 @@
 let salas = {
     D017: {
         nome: "D017",
-        imagem: "teste1.jpeg",
+        imagem: "teste1.jpg",
         tipoSala: "sala de reunião",
         capacidade: 30
     },
     D018: {
         nome: "D018",
-        imagem: "teste2.jpeg",
+        imagem: "teste2.jpg",
         tipoSala: "sala de reunião",
         capacidade: 30
     },
     D025: {
         nome: "D025",
-        imagem: "teste3.jpeg",
+        imagem: "teste3.jpg",
         tipoSala: "sala de reunião Oval",
         capacidade: 40
     },
     D024: {
         nome: "D024",
-        imagem: "teste4.jpeg",
+        imagem: "teste4.jpg",
         tipoSala: "sala de reunião",
         capacidade: 20
     }
