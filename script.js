@@ -47,33 +47,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            // Cria um elemento div para o pop-up
-            const popup = document.createElement('div');
-            popup.className = 'popup';
-            popup.innerHTML = `
+            // Atualiza o conteúdo do sidebar com as informações da sala
+            document.getElementById('sidebar').innerHTML = `
+                <h2>Informações</h2>
                 <p><strong>${sala.nome}</strong></p>
                 <p><strong>Tipo:</strong> ${sala.tipoSala}</p>
                 <p><strong>Capacidade:</strong> ${sala.capacidade} pessoas</p>
                 <img src="${sala.imagem}" alt="Imagem da sala ${sala.nome}" style="max-width: 100%; height: auto;">
+                <button onclick="hideSidebar()">Fechar</button>
             `;
 
-            // Estilo para o pop-up
-            popup.style.position = 'absolute';
-            popup.style.left = `${e.pageX}px`; // Posição horizontal onde foi clicado
-            popup.style.top = `${e.pageY}px`; // Posição vertical onde foi clicado
-            popup.style.backgroundColor = 'white';
-            popup.style.border = '1px solid black';
-            popup.style.padding = '10px';
-            popup.style.zIndex = '1000';
-            popup.style.borderRadius = '15px';  
-
-            // Adiciona o pop-up ao corpo do documento
-            document.body.appendChild(popup);
-
-            // Fecha o pop-up ao clicar fora dele
-            popup.addEventListener('click', function() {
-                document.body.removeChild(popup);
-            });
+            // Exibe o sidebar
+            document.getElementById('sidebar').style.display = 'block';
         });
     });
 });
+
+function hideSidebar() {
+    document.getElementById('sidebar').style.display = 'none';
+}

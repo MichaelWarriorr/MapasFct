@@ -11,10 +11,28 @@
     <img src="zero_2-removebg.png" usemap="#image-map">
 
     <map name="image-map">
-        <area target="" alt="0.D017" title="0.D017" href="#" coords="797,126,908,215" shape="rect" id="D017" data-popup="">
-        <area target="" alt="0.D018" title="0.D018" href="#" coords="1020,214,910,125" shape="rect" id="D018" data-popup="">
-        <area target="" alt="0.D025" title="0.D025" href="#" coords="826,368,1019,568" shape="rect" id="D025" data-popup="">
-        <area target="" alt="0.D024" title="0.D024" href="#" coords="1159,568,1020,443" shape="rect" id="D024" data-popup="">
+        <area target="" alt="0.D017" title="0.D017" href="#" coords="797,126,908,215" shape="rect" id="D017" data-popup="" onclick="showSidebar('Informações')">
+        <area target="" alt="0.D018" title="0.D018" href="#" coords="1020,214,910,125" shape="rect" id="D018" data-popup="" onclick="showSidebar('Informações')">
+        <area target="" alt="0.D025" title="0.D025" href="#" coords="826,368,1019,568" shape="rect" id="D025" data-popup="" onclick="showSidebar('Informações')">
+        <area target="" alt="0.D024" title="0.D024" href="#" coords="1159,568,1020,443" shape="rect" id="D024" data-popup="" onclick="showSidebar('Informações')">
     </map>
+
+    <div class="sidebar" id="sidebar">
+        <h2>Informações</h2>
+        <p id="info"></p>
+        <button onclick="hideSidebar()">Fechar</button>
+    </div>
+
+    <script>
+        function showSidebar(info) {
+            document.getElementById('info').innerText = info;
+            document.getElementById('sidebar').style.display = 'block';
+        }
+
+        function hideSidebar() {
+            document.getElementById('sidebar').style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>
